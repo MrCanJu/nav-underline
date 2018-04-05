@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		nav{
+			width: 700px;
+			margin: 30px auto;
+			overflow: hidden;
+		}
+		a{
+			text-decoration: none;
+			color: #333;
+			padding: 5px 5px;
+			float: left;
+			position: relative;
+		}
+		a:after{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 100%;
+			border-bottom: 1px solid #000;
+			width: 0;
+			transition: all .3s ease;
+		}
+		a:hover:after{
+			width: 100%;
+			left: 0;
+		}
+		a:hover+a:after{
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="javascript:;">不可思议的CSS</a>
+		<a href="javascript:;">导航栏</a>
+		<a href="javascript:;">光标小下划线跟随</a>
+		<a href="javascript:;">PURE CSS</a>
+		<a href="javascript:;">Nav Underline</a>
+	</nav>
+</body>
+</html>
